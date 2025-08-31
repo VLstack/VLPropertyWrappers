@@ -10,9 +10,14 @@ let package = Package(name: "VLPropertyWrappers",
                        .library(name: "VLPropertyWrappers",
                                 targets: [ "VLPropertyWrappers" ])
                       ],
+                      dependencies:
+                      [
+                       .package(url: "https://github.com/VLstack/VLStringKit", from: "2.2.4")
+                      ],
                       targets:
                       [
-                       .target(name: "VLPropertyWrappers"),
+                       .target(name: "VLPropertyWrappers",
+                               dependencies: [ "VLStringKit" ]),
                        .testTarget(name: "VLPropertyWrappersTests",
                                    dependencies: [ "VLPropertyWrappers" ])
                       ])
