@@ -16,3 +16,5 @@ public struct Clamped<T: Comparable>
   set { value = min(max(newValue, range.lowerBound), range.upperBound) }
  }
 }
+
+extension Clamped: Codable where T: Codable {}

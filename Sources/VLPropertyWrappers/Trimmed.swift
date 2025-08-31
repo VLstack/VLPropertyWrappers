@@ -16,3 +16,5 @@ public struct Trimmed
   set { value = newValue.trimmed }
  }
 }
+
+extension Trimmed: Codable {}
