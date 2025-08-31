@@ -1,7 +1,7 @@
 import VLStringKit
 
 @propertyWrapper
-struct Trimmed
+public struct Trimmed
 {
  private var value: String = ""
 
@@ -10,7 +10,7 @@ struct Trimmed
   self.wrappedValue = wrappedValue.trimmed
  }
 
- var wrappedValue: String
+ public var wrappedValue: String
  {
   get { value }
   set { value = newValue.trimmed }
