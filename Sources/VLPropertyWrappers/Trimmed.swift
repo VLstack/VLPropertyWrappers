@@ -17,4 +17,4 @@ public struct Trimmed
  }
 }
 
-extension Trimmed: Codable {}
+//extension Trimmed: Codable {}

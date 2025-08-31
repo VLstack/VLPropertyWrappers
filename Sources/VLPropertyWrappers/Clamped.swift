@@ -17,4 +17,4 @@ public struct Clamped<T: Comparable>
  }
 }
 
-extension Clamped: Codable where T: Codable {}
+//extension Clamped: Codable where T: Codable {}
